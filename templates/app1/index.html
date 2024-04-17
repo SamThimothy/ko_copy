@@ -1,0 +1,218 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+{% block base %}
+
+      <!-- <div class="background" id="image-dis">
+        
+      </div> -->
+      <div id="carouselExampleInterval" class="carousel slide carousel-fade image-dis" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="000">
+            <img loading="lazy" src="{% static 'images/image1.png' %}" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block image-dis-content">
+              <h1>Hello</h1>
+            </div> -->
+          </div>
+          <div class="carousel-item" data-bs-interval="000">
+            <img loading="lazy" src="{% static 'images/image2.png' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="000">
+            <img loading="lazy" src="{% static 'images/image3.png' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="000">
+            <img loading="lazy" src="{% static 'images/image4.png' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <button class="prev-button">&lt;</button>
+      <button class="next-button">&gt;</button> -->
+      <section id="service-section">
+        <h2>Our Services</h2>
+        <div class="services">
+
+          <div class="services-card">
+            <div class="service-icon-div">
+              <img loading="lazy" class="service-icon" src="{% static 'images/icon1.png' %}" alt="">
+
+            </div>
+              <div>
+
+                <h3>SAP</h3>
+                <p>Regarding system applications and products (SAP), KO-Innovations continue..</p>
+              </div>
+
+          </div>
+
+          <div class="services-card">
+            <div class="service-icon-div">
+              <img loading="lazy" class="service-icon" src="{% static 'images/icon2.png' %}" alt="">
+
+            </div>
+            <div>
+              <h3>AI & Machine Learning & RPA</h3>
+              <p>RPA boosts employee morale by automating repetitive tasks. Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems.</p>
+
+            </div>
+          </div>
+
+          <div class="services-card">
+            <div class="service-icon-div">
+              <img loading="lazy" class="service-icon" src="{% static 'images/icon3.png' %}" alt="">
+
+            </div>
+            <div>
+              <h3>Digital Products</h3>
+              <p>Step inside the center of excellence where we build bold, engaging new websites.</p>
+
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <div id="top-svg">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path></svg>
+
+      </div>
+      <section id="ko-section">
+        <div>
+
+          <h2>WELCOME TO KO INNOVATION</h2>
+          <p id="ko-section-info">We Transform Ideas Into Engaging Digital Experiences.</p>
+          <p>
+            The world around us change incredibly every passing day. There has never been more pressing need for organizations to rethink and realign their businesses for a changed world.
+          </p>
+          <p>
+            Growth and profitability of a business is highly driven by various technologies across all aspects of business. In today’s world, keeping up with the global technological advancements is not just an added advantage but an indispensable need.
+          </p>
+          <p>
+            Adopting innovations makes your business smart and agile; businesses need to be constantly evolving ideas to stay ahead of the curve. It is imperative to build Ideas and Innovations that leave a lasting Impact on lives.
+          </p>
+          <button>Explore</button>
+          
+        </div>
+        
+        
+        
+        
+      </section>
+      <div id="bottom-svg">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path></svg>
+
+      </div>
+      <section id="idea-section">
+        <div id="idea-head">
+          <h2>From Idea To Impact</h2>
+        </div>
+        <div id="idea-cards">
+          <div class="idea-cards-card">
+            <div class="idea-cards-icon">
+              <img loading="lazy" src="{% static 'images/icon4.png' %}" alt="">
+            </div>
+            <div class="idea-cards-text">
+              <h3>Ideation Stage</h3>
+              <p>This is the beginning stage of a creative process where one formulates the seed of an Innovation – the Idea. This involves coining nimble and disruptive ideas through extensive research and inclusive brainstorm sessions.</p>
+
+            </div>
+          </div>
+          <div class="idea-cards-card">
+            <div class="idea-cards-icon">
+              <img loading="lazy" src="{% static 'images/icon5.png' %}" alt="">
+            </div>
+            <div class="idea-cards-text">
+              <h3>Innovation Stage</h3>
+              <p>Once the idea is formulated it reaches the innovation stage where it is implemented. The idea transforms into a sustainable Innovation on digital platforms through investments in emerging technologies to prototype designs</p>
+
+            </div>
+          </div>
+          <div class="idea-cards-card">
+            <div class="idea-cards-icon">
+              <img loading="lazy" src="{% static 'images/icon6.png' %}" alt="">
+            </div>
+            <div class="idea-cards-text">
+              <h3>Impact Stage</h3>
+              <p>The final and crucial part is the Impact stage. Here we help deliver the IT to the business organisations by building, scaling and delivering digital technology solutions. We assess the Impact in a systematic way and deduce information for further growth.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="careers-section">
+        <div class="careers-form">
+          <div>
+
+            <h2>Care To Join Us?</h2>
+            <p>We’re a talented global team creating digital experiences that merge imagination and technology. Sound good? We’re hiring.</p>
+          </div>
+          <div id="careers-form-fields">
+
+            <form action="">
+              <div>
+                <input type="text" placeholder="Name">
+              </div>
+              <div>
+                <input type="email" placeholder="Email">
+              </div>
+              <div>
+                <input type="number" placeholder="Mobile">
+              </div>
+              <div>
+                <textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea>
+              </div>
+              <div>
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="careers-icon">
+          <img loading="lazy" width="500px" src="{% static 'images/icon7.png' %}" alt="">
+        </div>
+
+      </section>
+      <section id="client-section">
+        <div class="client-head">
+          <h2>Our Clients</h2>
+        </div>
+        <div id="client-images">
+          <div>
+            <img loading="lazy" src="{% static 'images/icon8.png' %}" alt="">
+
+          </div>
+          <div>
+            <img loading="lazy" src="{% static 'images/icon9.png' %}" alt="">
+
+          </div>
+          <div>
+            <img loading="lazy" src="{% static 'images/icon10.png' %}" alt="">
+
+          </div>
+          <div>
+            <img loading="lazy" src="{% static 'images/icon11.png' %}" alt="">
+
+          </div>
+          
+        </div>
+        <div class="client-head">
+          <h2>Our Partners</h2>
+        </div>
+        <div id="client-partner">
+          <div>
+            <img loading="lazy" src="{% static 'images/icon12.png' %}" alt="">
+
+          </div>
+          <div>
+            <img loading="lazy" src="{% static 'images/icon13.png' %}" alt="">
+
+          </div>
+        </div>
+      </section>
+
+{% endblock %}

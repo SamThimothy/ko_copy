@@ -1,0 +1,1184 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-icon{
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.57);
+}
+
+.nav-icon:hover{
+    color: white;
+}
+
+.navbar{
+    background-color: #060b38;
+    height: 3.3rem;
+}
+
+.nav-mail{
+    font-size: .9rem;
+}
+
+.nav-mail-icon{
+    padding: 0 .5rem 0 1rem;
+}
+
+.nav-link{
+    padding: 0.5rem .7rem;
+}
+
+#main-navbar-div{
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    place-items: center;
+    padding: 1rem;
+}
+
+#main-navbar-div ul{
+    list-style-type: none;
+}
+
+#main-navbar-div1{
+    width: 100%;
+}
+
+#main-navbar-div1 a{
+    font-size: 2rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    word-spacing: 1rem;
+    letter-spacing: .5rem;
+}
+
+#main-navbar-div2{
+    width: 100%;
+}
+
+#main-navbar-div2 ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    place-items: center;
+    width: 100%;
+    align-content: center;
+    margin: 0;
+}
+
+#main-navbar-div2 ul li a{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 500;
+}
+
+#main-navbar-div2 ul li .dropdown-content a{
+    font-size: 1rem;
+}
+
+#main-navbar-div2 ul li .dropdown-content a:hover{
+    color: #fd851b;
+}
+
+#main-nav-btn{
+    font-size: 1rem;
+    background-color: #fd851b;
+    color: white;
+}
+
+#main-nav-btn:hover{
+    background-color: #a75814;
+}
+
+.main-nav-icon{
+    display: inline-block;
+    position: relative;
+    color: #fd851b;
+}
+
+.main-nav-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -.3rem;
+    left: 0;
+    background-color: #fd851b;
+    transform-origin: bottom left;
+    transition: transform 0.4s ease-out;
+}
+
+.main-nav-icon:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: #f9f9f9;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    font-size: smaller;
+    z-index: 1;
+}
+
+.dropdown-content a:hover{
+    color: #fd851b;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    line-height: 2rem;
+}
+
+.dropdown:hover .dropdown-content a{
+    font-size: 1rem;
+}
+
+.dropdown:hover .dropdown-content .nav-active{
+    /* background-color: red; */
+    color: red;
+}
+
+header{
+    position: relative;
+    z-index: 3;
+}
+
+/* .dropdown-content a{
+    color: red;
+    text-decoration: dashed;
+} */
+
+.image-dis .carousel-inner .carousel-item{
+    height: 80vh;
+}
+
+.image-dis .carousel-inner .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-dis-content{
+    position: absolute;
+    top: 30px;
+}
+
+#service-section{
+    text-align: center;
+    height: 100vh;
+}
+
+#service-section h2{
+    margin: 2rem 1rem 1rem;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 4rem 0;
+}
+
+.services-card{
+    padding: 50px 35px 65px;
+    height: 75vh;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    place-items: center;
+}
+
+.services-card img{
+    height: 40px;
+    width: auto;
+}
+
+.service-icon-div{
+    padding: 2rem ;
+    background-color: #e9eff8;
+    border-radius: 50%;
+}
+
+#ko-section div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 8rem;
+    height: 85vh;
+    background-color: #021753;
+    color: white;
+
+}
+
+#ko-section-info{
+    font-size: 3rem;
+    margin: 2rem 8rem;
+    font-weight: 800;
+}
+
+#ko-section div h2{
+    font-size: 1rem;
+    color: #f79e52;
+}
+
+#ko-section div button{
+    background-color: #021753;
+    padding: 1rem 4rem;
+    border: 2px solid white;
+    color: white;
+    margin-top: 1rem;
+}
+
+#ko-section div button:hover{
+    background-color: #f79e52;
+    border: 2px solid #f79e52;
+}
+
+#top-svg{
+    background-color: #021753;
+    fill: white;
+}
+#bottom-svg{
+    background-color: white;
+    fill: #021753;
+}
+
+#idea-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.idea-cards-icon img{
+    height: 50px;
+    filter: invert(1);
+}
+
+.idea-cards-icon{
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #002896;
+    border-radius: 50%;
+}
+
+
+.idea-cards-icon:hover{
+    background-color: #f79e52;
+}
+
+
+#idea-section{
+    margin: 0 3rem;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+#idea-section #idea-head{
+    margin-top: 2rem;
+}
+
+
+#idea-section #idea-head h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.idea-cards-card{
+    padding: 2rem;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+}
+
+
+.idea-cards-text{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+#careers-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    place-content: center;
+    place-items: center;
+}
+
+.careers-form{
+    padding: 4rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.careers-form h2{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#careers-form-fields form div{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+#careers-form-fields form div textarea,
+#careers-form-fields form div input{
+    border: none;
+    border-bottom: 1px solid rgb(187, 178, 178);
+}
+
+#careers-form-fields form div textarea:focus-visible,
+#careers-form-fields form div input:focus-visible{
+    outline: none;
+}
+
+#careers-form-fields form div textarea{
+    resize: none;
+}
+
+#careers-form-fields form div input{
+    padding: 1rem 0;
+}
+
+#careers-form-fields form div button{
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 30%;
+    background-color: #021753;
+    color: white;
+    border: none;
+}
+
+#careers-form-fields form div button:hover{
+    background-color: #f79e52;
+}
+
+#client-section{
+    background-color: #021753;
+    color: white;
+    height: 100vh;
+    padding: 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1r 1fr 1fr 1fr;
+    place-content: center;
+    place-items: center;
+}
+
+#client-section .client-head h2{
+    font-weight: 700;
+    margin: 2rem;
+    font-size: 4rem;
+}
+
+#client-section #client-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+}
+
+#client-section #client-images div img{
+    margin: 1rem;
+    height: 100px;
+    width: 280px;
+    background-color: white;
+}
+
+#client-partner img{
+    background-color: white;
+    height: 100px;
+    width: 280px;
+}
+
+#client-partner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#client-partner div{
+    margin: 1rem;
+}
+
+#contact-section{
+    height: 80vh;
+}
+
+#contact-head{
+    text-align: center;
+    padding: 2rem;
+}
+
+#contact-head h2{
+    font-size: 1.5rem;
+    font-weight: 900
+}
+
+#contact-head h2 button{
+    background-color: #fd851b;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+}
+
+#contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1.5fr;
+    background-color: #021753;
+    height: 60vh;
+    color: white;
+    place-content: center;
+    place-items: start;
+}
+
+#contact-grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    display: grid;
+    height: 100%;
+    place-items: start;
+}
+
+#contact-grid-3 div{
+    margin: 1rem;
+}
+
+#contact-grid-1{
+    margin: 2.5rem;
+    text-align: justify;
+}
+
+#contact-grid-1 img{
+    filter: invert(1);
+    margin-bottom: 1rem;
+}
+
+#contact-grid-2{
+    margin: 2rem;
+    line-height: 3rem;
+}
+
+#contact-grid-2 h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact-grid-3 h3{
+    font-size: 1.5rem;
+}
+
+#contact-grid-2 h4{
+    font-size: 1.2rem;
+}
+
+#contact-grid-3 ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+
+#contact-grid-3 ul li i{
+    color: rgba(255, 255, 255, 0.602);
+}
+
+#contact-grid-3 #contact-join-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#contact-grid-3 #contact-join-icon li{
+    background-color: white;
+    color: black;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .2rem;
+    border-radius: 50%;
+}
+
+#contact-grid-3 #contact-join-icon li:hover{
+    background-color: #f79e52;
+}
+#contact-grid-3 #contact-join-icon li:hover i{
+    color: white;
+}
+
+/* #contact-grid-3 #contact-join-icon li i:hover{
+    color: white;
+} */
+
+#contact-grid-3 #contact-join-icon li i{
+    font-size: 1.2rem;
+    color: black;
+}
+
+footer{
+    display: flex;
+    background-color: #021753;
+    color: white;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+
+}
+
+footer ul li{
+    margin: 0 .3rem;
+    color: rgba(255, 255, 255, 0.665);
+}
+
+footer ul li:hover{
+    color: white;
+}
+
+/* About Page */
+#about-section #about-header{
+    background-image: url(../static/images/image5.png);
+    height: 350px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+#about-section div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #ef8231de, #060b38e6);
+    color: white;
+    font-size:3rem;
+    font-weight: 700;
+}
+
+#about-section #about-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items:start center;
+    padding: 4rem 0;
+
+}
+
+#about-section #about-info #about-text{
+    display: grid;
+    padding-right: 3rem;
+    line-height: 1.7rem;
+}
+
+#about-section #about-info #about-text h3{
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+#about-section #about-info #about-text h4{
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+    color: #fd851b;
+}
+
+#about-section #about-info #about-text p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#about-section #about-info #about-text #about-text-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+}
+
+#about-section #about-info #about-text #about-text-list li h4{
+    color: black;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+#about-section #about-info #about-text #about-text-list li h4 span{
+    -webkit-text-stroke: 1px #fb683e;
+    color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-right: 15px;
+}
+
+#about-section #about-info #about-text #about-text-list li p{
+    font-weight: 400;
+}
+
+#about-section #about-ideas{
+    text-align: center;
+    padding: 1rem 3.5rem;
+    line-height: 1.5rem;
+}
+
+#about-section #about-ideas h3{
+    font-weight: 600;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+#about-section #about-ideas p{
+    font-weight: 500;
+}
+
+#about-section #about-vision{
+    margin: 2rem 0;
+}
+
+#about-section #about-vision div{
+    position: relative;
+    padding: 2rem 2rem;
+}
+
+#about-section #about-vision div img{
+    height: 300px;
+    width: 280px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#about-section #about-vision .about-vision-box-odd:after{
+    background-image: url(../static/images/image1.svg);
+    content: "";
+    filter: blur(2px);
+    opacity: .6;
+    z-index: -1;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 3rem; 
+    /* top: 50%; */
+    /* transform: translate(40% 40%); */
+}
+
+#about-section #about-vision .about-vision-box-even:after{
+    background-image: url(../static/images/image1.svg);
+    content: "";
+    filter: blur(2px);
+    opacity: .6;
+    z-index: -1;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    /* left: 9rem;  */
+    transform: translate(107%);
+}
+
+#about-section #about-vision .about-vision-box-odd{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    margin:0 2rem;
+}
+
+#about-section #about-vision .about-vision-box-even{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    margin:0 2rem;
+
+}
+
+#about-section #about-vision div div h3{
+    font-weight: 700;
+}
+
+#about-section #about-team{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#about-section #about-team .about-team-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-team .about-team-box .about-team-box-text{
+    background-color: #021753;
+    color: white;
+    display: grid;
+    place-content: center;
+    padding: 2.5rem 5.5rem 2.5rem 4rem;
+}
+
+#about-team .about-team-box .about-team-box-text h3{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+
+#about-section #about-team .about-team-box .about-team-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about-section #about-team .about-team-box:nth-child(2) .about-team-box-img{
+    order: -1;
+}
+
+
+#about-client-section{
+    background-color: white;
+    height: 100vh;
+    padding: 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1r 1fr 1fr 1fr;
+    place-content: center;
+    place-items: center;
+}
+
+#about-client-section .client-head h2{
+    font-weight: 700;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+#about-client-section #client-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+}
+
+#about-client-section #client-images div img{
+    margin: 1rem;
+    height: 100px;
+    width: 280px;
+    background-color: white;
+}
+
+#client-partner img{
+    background-color: white;
+    height: 100px;
+    width: 280px;
+}
+
+#client-partner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#client-partner div{
+    margin: 1rem;
+}
+
+/* Careers Page */
+#career-section #career-header{
+    background-image: url(../static/images/image5.png);
+    height: 350px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+#career-section div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #ef8231de, #060b38e6);
+    color: white;
+    font-size:3rem;
+    font-weight: 700;
+}
+
+#career-section #join-us{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    width: 100%;
+    height: 100%;
+    /* place-items: start center ; */
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#career-section #join-us #join-us-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+#career-section #join-us #join-us-form form h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 2rem;
+    grid-area: head;
+}
+
+#career-section #join-us #join-us-form form p{
+    font-weight: 500;
+    grid-area: para;
+}
+
+#career-section #join-us #join-us-form form #name{
+    grid-area: name;
+}
+#career-section #join-us #join-us-form form #email{
+    grid-area: email;
+}
+#career-section #join-us #join-us-form form #choice{
+    grid-area: choice;
+}
+#career-section #join-us #join-us-form form #message{
+    grid-area: message;
+}
+#career-section #join-us #join-us-form form #file{
+    grid-area: file;
+}
+#career-section #join-us #join-us-form form #send-button{
+    grid-area: send;
+}
+
+#career-section #join-us #join-us-form form #name input{
+    border: none;
+    border-bottom: 1px solid rgb(187, 178, 178);
+    padding: 1rem 0;
+    width: 100%;
+    margin-right: 1rem;
+    color: rgb(85, 84, 84);
+}
+
+#career-section #join-us #join-us-form form #name input:focus-visible{
+    outline: none;
+}
+#career-section #join-us #join-us-form form #email input:focus-visible{
+    outline: none;
+}
+#career-section #join-us #join-us-form form #choice input:focus-visible{
+    outline: none;
+}
+#career-section #join-us #join-us-form form #message textarea:focus-visible{
+    outline: none;
+}
+
+#career-section #join-us #join-us-form form #email input{
+    border: none;
+    border-bottom: 1px solid rgb(187, 178, 178);
+    grid-area: email;
+    padding: 1rem 0;
+    width: 100%;
+    color: rgb(85, 84, 84);
+}
+
+#career-section #join-us #join-us-form form #choice input{
+    border: none;
+    border-bottom: 1px solid rgb(187, 178, 178);
+    grid-area: choice;
+    padding: 1rem 0;
+    width: 100%;
+    color: rgb(85, 84, 84);
+}
+
+#career-section #join-us #join-us-form form #message textarea{
+    border: none;
+    padding: 1rem 0;
+    height: 180px;
+    border-bottom: 1px solid rgb(187, 178, 178);
+    resize: none;
+    grid-area: message;
+    width: 100%;
+    color: rgb(85, 84, 84);
+    line-height: 2rem;
+}
+
+#career-section #join-us #join-us-form form #file{
+    display: grid;
+    grid-area: file;
+}
+
+#career-section #join-us #join-us-form form #file label{
+    padding: 1rem 0;
+}
+
+#career-section #join-us #join-us-form form #file #file-upload::-webkit-file-upload-button{
+    padding: 0.25rem 2rem;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    font-size: .9rem;
+}
+
+#career-section #join-us #join-us-form form #file #file-upload{
+    opacity: .7;
+    border-bottom: 1px solid rgb(187, 178, 178);
+    padding: 0 0 2rem;
+}
+
+#career-section #join-us #join-us-form form #send-button button{
+    background-color: #021753;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border-radius: 3px;
+    border: none;
+}
+
+#career-section #join-us #join-us-form form #send-button button:hover{
+    background-color: #fd851b;
+}
+
+#career-section #join-us #join-us-form form{
+    display: grid;
+    grid-template-areas: 
+    'head head'
+    'para para'
+    'name email'
+    'choice choice'
+    'message message'
+    'file file'
+    'send send';
+    column-gap: 1rem;
+}
+
+/* Contact Page */
+#con-section #con-header{
+    background-image: url(../static/images/image5.png);
+    height: 350px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+#con-section div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #ef8231de, #060b38e6);
+    color: white;
+    font-size:3rem;
+    font-weight: 700;
+}
+
+#con-section #con-addr{
+    margin: 4rem;
+}
+
+#con-section #con-addr #con-addr-list,
+#con-section #con-addr #con-addr-mail{
+    padding: 2rem;
+    margin: .7rem;
+    border-radius: 3px;
+    box-shadow: 0 0 30px #e1c2b099;
+}
+
+#con-section #con-addr{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 300px;
+}
+
+#con-section #con-addr #con-addr-list #con-addr-icon img,
+#con-section #con-addr #con-addr-mail div img{
+    height: 30px;
+    width: 30px;
+}
+
+#con-section #con-addr #con-addr-list #con-addr-icon,
+#con-section #con-addr #con-addr-mail div{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: #e9eff8;
+}
+
+#con-section #con-addr #con-addr-list{
+    display: grid;
+    grid-template-rows: .3fr .2fr .5fr;
+}
+
+#con-section #con-addr #con-addr-list #con-addr-1-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#con-section #con-addr #con-addr-mail{
+    display: grid;
+    grid-template-rows: .3fr .2fr .5fr;
+}
+
+#con-addr-list #con-addr-head,
+#con-addr-mail h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+#con-addr-list #con-addr-1-2 div h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#con-addr-list #con-addr-1-2 div p{
+    letter-spacing: .05rem;
+}
+
+#con-addr-mail ul{
+    list-style-type: none;
+    padding: .5rem 0;
+}
+
+#con-addr-mail ul li{
+    padding: .3rem 0;
+}
+
+#con-form form{
+    padding: 7rem 9rem;
+    text-align: center;
+}
+
+#con-form form div input,
+#con-form form div textarea{
+    width: 100%;
+    padding: 1.5rem 0;
+    border: none;
+    border-bottom: 1px solid rgb(187, 178, 178);
+    resize: none;
+}
+
+#con-form form div input:focus-visible,
+#con-form form div textarea:focus-visible{
+    outline: none;
+}
+
+#con-form form h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+#con-form form #submit{
+    text-align: left;
+    margin: 2rem 0;
+}
+
+#con-form form #submit button{
+    padding: 1rem 1.5rem;
+    border: none;
+    background-color: #021753;
+    color: white;
+    border-radius: 3px;
+}
+
+#con-form form #submit button:hover{
+    background-color: #fd851b;
+}
+
+#con-section #con-map iframe{
+    width: 100%;
+}
+
+/* SAP Services */
+#sap-section #sap-header{
+    background-image: url(../static/images/image5.png);
+    height: 350px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+#sap-section div h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #ef8231de, #060b38e6);
+    color: white;
+    font-size:3rem;
+    font-weight: 700;
+}
+
+#sap-section #s-intro{
+    color: rgb(2, 23, 83);
+    padding: 5rem 3.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#sap-section #sap-bio{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#sap-section #sap-bio .sap-bio-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#sap-section #sap-bio .sap-bio-box img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#sap-section #sap-bio .sap-bio-box:nth-of-type(odd) img{
+    color: red;
+    order: 1;
+}
+
+#sap-section #sap-bio .sap-bio-box:nth-of-type(3) img{
+    object-fit: contain;
+}
+
+#sap-section #sap-bio .sap-bio-box div{
+    padding: 5rem;
+    background-color: #021753;
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+#sap-section #sap-bio .sap-bio-box div h3{
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}

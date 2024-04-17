@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KO Innovation Software Solutions - Software Development Company</title>
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+<body>
+    <!-- <nav>
+        <ul>
+            <div id="nav_left">
+                <li><i class="fa-regular fa-envelope"></i>contactus@email.com</li>
+            </div>
+            <div id="nav_right">
+                <li>
+                  <i class="fa-brands fa-linkedin"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+            </div>
+            
+        </ul>
+    </nav> -->
+    <header>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" id="nav-display">
+          <a class="navbar-brand nav-icon nav-mail" href="mailto:hr@koinnovation.com"><i class="fa-regular fa-envelope nav-mail-icon"></i>contactus@koinnovation.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#">
+                <i class="fa-brands fa-instagram"></i>                  
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="main-navbar">
+        <div id="main-navbar-div">
+          <div id="main-navbar-div1">
+            <a href="{% url 'home' %}"><img loading="lazy" height="45px" width="auto" src="{% static 'images/logo.png' %}" alt=""></a>
+          </div>
+          <div id="main-navbar-div2">
+            <ul>
+              <li class="dropdown">
+                <a class="main-nav-icon" href="{% url 'home' %}">Services</a>
+                <div class="dropdown-content">
+                  <a {% url 'sap-services' as url %} href="{{ url }}" {% if request.path == url %} class="nav-active"{% endif %}>SAP</a>
+                  <a href="#" class="nav-active" >AI Machine Learning & RPA</a>
+                  <a href="#">Digital Products</a>
+                </div>
+              </li>
+              <li>
+                <a class="main-nav-icon" href="{% url 'about' %}">About Us</a>
+              </li>
+              <li>
+                <a class="main-nav-icon" href="{% url 'careers' %}">Careers</a>
+              </li>
+              <li>
+                <a class="main-nav-icon" href="{% url 'contact' %}">Contact Us</a>
+              </li>
+              <li>
+                <a href="{% url 'contact' %}">
+                  <button class="btn" id="main-nav-btn">Request Consultation</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+      {% block base %}
+      {% endblock %}
+    </main>
+
+
+      <section id="contact-section">
+        <div id="contact-head">
+          <h2>Have a Project or a question? We'd love to hear from you <button>Enquiry</button></h2>
+        </div>
+        <div id="contact-grid">
+          <div id="contact-grid-1">
+            <img loading="lazy" height="60px" src="{% static 'images/logo.png' %}" alt="">
+            <p>The world around us change incredibly every passing day. There has never been more pressing need for organizations to rethink and realign their businesses for a changed world. We support the organizations to adopt the changes for benefits and future.</p>
+          </div>
+          <div id="contact-grid-2">
+            <h3>Get In Touch</h3>
+            <h4>Chennai</h4>
+            <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;No: 25, 15th Main Road, Anna Nagar West, Chennai 600040</p>
+            <h4>Trichy</h4>
+            <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;No 11, 10th Cross Thillai Nagar, Trichy-620018</p>
+            <h4><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;contactus@koinnovation.com</h4>
+          </div>
+          <div id="contact-grid-3">
+            <div>
+              <h3>Explore Links</h3>
+              <ul>
+                <li><i class="fa-solid fa-minus"></i>&nbsp;&nbsp;&nbsp;<i class="contact-grid-3-label">Services</i></li>
+                <li><i class="fa-solid fa-minus"></i>&nbsp;&nbsp;&nbsp;<i class="contact-grid-3-label">About Us</i></li>
+                <li><i class="fa-solid fa-minus"></i>&nbsp;&nbsp;&nbsp;<i class="contact-grid-3-label">Careers</i></li>
+                <li><i class="fa-solid fa-minus"></i>&nbsp;&nbsp;&nbsp;<i class="contact-grid-3-label">Contact Us</i></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Join Us</h3>
+              <ul id="contact-join-icon">
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    <footer>
+      <p>Copyright © 2024 KO innovation.</p>
+      <ul>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Sitemap</li>
+      </ul>
+    </footer>
+<!-- 
+    <script src="{% static 'script.js' %}"></script> -->
+</body>
+</html>

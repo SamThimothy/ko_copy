@@ -1,0 +1,11 @@
+body div{
+    border: 1px solid red;
+    height: 500px;
+    width: 500px;
+}
+
+body div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-self: center;
+}

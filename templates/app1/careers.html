@@ -1,0 +1,43 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+{% block base %}
+
+<section id="career-section">
+
+    <div id="career-header">
+        <h2>Careers</h2>
+    </div>
+    <div id="join-us">
+        <div id="join-us-img">
+            <img src="{% static 'images/image12.png' %}" alt="" loading="lazy">
+        </div>
+        <div id="join-us-form">
+            <form action="">
+                <h3>Join us</h3>
+                <p>We're a talented global team creating digital experiences that merge imagination and technology. Sound good? We're hiring.</p>
+                <div id="name">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div id="email">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div id="choice">
+                    <input type="text" placeholder="Your Preferred Role">
+                </div>
+                <div id="message">
+                    <textarea id="message" placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div id="file">
+                    <label for="file-upload">Upload Your Resume</label>
+                    <input id="file-upload" type="file">
+                </div>
+                <div id="send-button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
