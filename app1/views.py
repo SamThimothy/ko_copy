@@ -15,3 +15,6 @@ def contact_view(request):
 
 def sap_view(request):
     return render(request, 'app1/sap_service.html')
+
+def ai_automation_view(request):
+    return render(request, 'app1/ai.html')

@@ -10,4 +10,5 @@ urlpatterns = [
     path('careers/', views.careers_view, name='careers'),
     path('contact/', views.contact_view, name='contact'),
     path('sap-service/', views.sap_view, name='sap-service'),
+    path('ai-automation/', views.ai_automation_view, name='ai-automation'),
 ]

@@ -85,8 +85,8 @@
               <li class="dropdown">
                 <a class="main-nav-icon" href="{% url 'home' %}">Services</a>
                 <div class="dropdown-content">
-                  <a {% url 'sap-services' as url %} href="{{ url }}" {% if request.path == url %} class="nav-active"{% endif %}>SAP</a>
-                  <a href="#" class="nav-active" >AI Machine Learning & RPA</a>
+                  <a {% url 'sap-service' as urls %} href="{{ urls }}"  class="{% if request.path == urls %}nav-active{% endif %}">SAP</a>
+                  <a {% url 'ai-automation' as urls %} href="{{ urls }}"  class="{% if request.path == urls %}nav-active{% endif %}">AI Machine Learning & RPA</a>
                   <a href="#">Digital Products</a>
                 </div>
               </li>
