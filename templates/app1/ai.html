@@ -1,3 +1,53 @@
 {% extends 'app1/base.html' %}
+{% load static %}
 {% block base %}
+<section id="ai-section">
+    <div id="ai-header">
+        <h2>AI and Automation <br> Services</h2>
+    </div>
+    <div id="ai-service">
+        <div id="ai-service-image" class="ai-service-content">
+            <img src="{% static 'images/image18.png' %}" alt="" loading="lazy">
+        </div>
+        <div id="ai-service-text" class="ai-service-content">
+            <h3>Artificial Intelligence and Automation Services</h3>
+            <p>Our end-to-end approach is highlighted products, services, and solutions that provide IT decision makers a single point of contact and a commitment of total customer value and satisfaction.</p>
+        </div>
+    </div>
+    <div id="rpa-service">
+        <p>By providing quality services we at KO-Innovation have established ourselves as a leading competitor in the IT solutions.</p>
+        <h3>RPA Services</h3>
+        <p>RPA journey starts when we understand the potential capability of technology can create a tool to overcome a lack of resources. When implemented with full passion we are freeing up capacity to handle value-added actions previously not possible, which, in turn, allows you to engage in a more productive and competence of the workforce improves.</p>
+        <h5>Solution</h5>
+        <p>With our use cases created using RPA, we can support you by creating Highly User Friendly, unattended BOTS which can work across a wide variety of processes and tools present in your current business environment.</p>
+    </div>
+    <div id="ai-items">
+        <div class="ai-items-box">
+            <div>
+                <h3>Implementation Services</h3>
+                <p>Conduct discovery workshops to ascertain scope, identify processes, and compute ROI benefits.</p>
+                <p>Automate initial high value processes to demonstrate and showcase RPA capabilities while generating significant ROI.</p>
+                <p>Build onshore, offshore teams that can develop bots for the entire range of identified processes in a programmatic model.</p>
+            </div>
+            <img src="{% static 'images/image19.png' %}" alt="" loading="lazy">
+        </div>
+        <div class="ai-items-box">
+            <div>
+                <h3>Support Services</h3>
+                <p>Multi-disciplinary skilled RPA team with rich experience are readily available to provide our support services 24/7 according to our client needs. Maintain existing processes and handle change management to ensure developed bots continue to operate optimally.</p>
+                <p>Ability to quickly transition into ongoing RPA programs that need to be accelerated to meet stakeholder expectations and increase velocity of bots rollouts for the identified processes.</p>
+                <p>We support to create bots, delivered on the SLAs.</p>
+            </div>
+            <img src="{% static 'images/image20.png' %}" alt="" loading="lazy">
+        </div>
+        <div class="ai-items-box">
+            <div>
+                <h3>Research & Training Services</h3>
+                <p>Technology triggers great shifts in such indusries as healthcare, automotive, retail, construction, banking, advertising, and more. AI is about to change the job landscape and ways of service delivery.</p>
+                <p>Our R&D team of data science and analytics experts develop, conduct and report on a wide range of internal projects and We continually look for new methods and approaches to improve our products and services with AI technology.</p>
+            </div>
+            <img src="{% static 'images/image21.png' %}" alt="" loading="lazy">
+        </div>
+    </div>
+</section>
 {% endblock %}

@@ -18,3 +18,6 @@ def sap_view(request):
 
 def ai_automation_view(request):
     return render(request, 'app1/ai.html')
+
+def digital_view(request):
+    return render(request, 'app1/digital.html')
