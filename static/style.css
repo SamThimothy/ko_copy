@@ -203,6 +203,18 @@ header{
     place-items: center;
 }
 
+.services-card div:nth-of-type(2){
+    place-self: start;
+}
+
+.services-card div:nth-of-type(2) h3{
+    margin: 2rem 0 0;
+}
+
+.services-card div:nth-of-type(2) p{
+    margin: 2rem 0 0;
+}
+
 .services-card img{
     height: 40px;
     width: auto;
